@@ -1,0 +1,52 @@
+{
+  "name": "SpiderShark",
+  "short_name": "SpiderShark",
+  "theme_color": "#9235ff",
+  "background_color": "#9235ff",
+  "display": "fullscreen",
+  "Scope": "/",
+  "start_url": "/pages/auth/login",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/P1w2YvS/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/8D763RT/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/bgM31ZX/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/SnNVpQq/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/n0xdJCk/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/gJtYcCB/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/wyJRJKQ/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/pXdXm1Q/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

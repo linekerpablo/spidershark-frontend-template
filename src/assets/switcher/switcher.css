@@ -1,0 +1,107 @@
+#custumize-style {
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 0 0 3px;
+    left: 0;
+    padding: 12px 0;
+    position: fixed;
+    top: 80px;
+    width: 134px;
+    z-index: 999;
+}
+#custumize-style div {
+	padding: 0 8px;
+	padding-bottom: 5px;
+}
+#custumize-style h3 {
+    color: #222;
+    font-family: helvetica;
+    font-size: 1.2em;
+    letter-spacing: unset;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+}
+#custumize-style .switcher {
+	display: block;
+    text-align: center;
+	height: 40px;
+    line-height: 42px;
+    color: #454545;  
+	position: absolute;
+	right: -40px;
+	top: 0;
+	width: 40px;
+	border-radius: 0 3px 3px 0;
+    background: #f1f1f1;
+}
+.fa-sliders { margin-top: 5px;}
+.colors-style {
+	list-style: none;
+	margin: 0px;
+	padding: 0;
+	overflow: hidden;
+}
+.colors-style li {
+	float: left;
+	margin: 2px;
+}
+.colors-style li a {
+	display: block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+.other-style { margin-top: 10px !important;}
+.default-color{ background: #0C7F75;}
+.red {
+	background: #D32F2F;
+}
+
+.red-2 {
+ background:#F44336;
+}
+
+.green {
+ background: #009688;
+}
+.green-2 {
+  background:#4CAF50;
+}
+
+.blue {
+ background: #2196F3;
+}
+
+.blue-2 {
+ background: #00BCD4;
+}
+
+.orange {
+ background:#FF9800;
+}
+.pink {
+ background:#E91E63;
+}
+
+.purple {
+ background:#9C27B0;
+}
+
+.violet {
+ background:#673AB7;
+}
+
+.turquoise {
+ background:#34DDDD;
+}
+
+.brick {
+ background:#FF5722;
+}
+
+.dark {
+ background:#607D8B;
+}
+.gray {
+    background: #616161;
+}

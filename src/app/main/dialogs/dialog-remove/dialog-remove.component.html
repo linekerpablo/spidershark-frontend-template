@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+    <p *ngIf="data.question">{{data.question}}</p>
+    <img class="text-align-center" *ngIf="data.image" [src]="data.image" />
+</div>
+<div mat-dialog-actions>
+    <button *ngIf="data.no" mat-button (click)="onNoClick()" class="btn-side-by-side btn-default mat-raised-button mat-accent mat-button btn-option-left">{{data.no}}</button>
+    <button *ngIf="data.yes" mat-button [mat-dialog-close]="true" class="submit-button btn-side-by-side btn-default mat-raised-button mat-accent mat-button" cdkFocusInitial>{{data.yes}}</button>
+</div>

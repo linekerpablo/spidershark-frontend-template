@@ -1,0 +1,3 @@
+ng build --aot --output-hashing=all -c development
+
+ng build --aot --output-hashing=all -c production

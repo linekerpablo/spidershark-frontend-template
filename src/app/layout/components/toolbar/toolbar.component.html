@@ -1,0 +1,58 @@
+<mat-toolbar class="p-0 mat-elevation-z1">
+
+    <div fxFlex fxFill fxLayout="row" fxLayoutAlign="start center">
+
+        <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
+
+            <button mat-icon-button class="navbar-toggle-button" *ngIf="!hiddenNavbar && !rightNavbar"
+                (click)="toggleSidebarOpen('navbar')" fxHide.gt-md>
+                <mat-icon class="secondary-text">menu</mat-icon>
+            </button>
+
+            <div class="nivel itens-left">
+                <img *ngIf="niveisUsuariosResposta" [src]="niveisUsuariosResposta.imagemNivelAtual"
+                    [matTooltip]="tooltipNivel" matTooltipPosition="left" (click)="abrirModalProximoNivel()" />
+            </div>
+
+            <div class="nivel itens-left" (click)="abrirModalProximoNivel()">
+                <span *ngIf="niveisUsuariosResposta">{{niveisUsuariosResposta.descricaoNivelAtual}}</span>
+                <mat-progress-bar *ngIf="niveisUsuariosResposta" mode="determinate" value="{{value}}"></mat-progress-bar>
+            </div>
+
+            <div class="itens-right">
+
+                <div class="toolbar-separator" *ngIf="!hiddenNavbar && !rightNavbar" fxHide.gt-md></div>
+
+                <button mat-button [matMenuTriggerFor]="userMenu" class="user-button">
+                    <div fxLayout="row" fxLayoutAlign="center center">
+                        <!-- <span *ngIf="calculoIMCResposta" class="username mr-100">Seu IMC: {{calculoIMCResposta.imc}}
+                            {{calculoIMCResposta.descricao}}</span> -->
+                        <img class="avatar mr-0 mr-sm-16" [src]="picture">
+                        <span *ngIf="account" class="username mr-12" fxHide fxShow.gt-sm>{{ account }}</span>
+                        <span *ngIf="!account" class="username mr-12" fxHide fxShow.gt-sm>{{ email }}</span>
+                        <mat-icon class="s-16" fxHide.xs>keyboard_arrow_down</mat-icon>
+                    </div>
+                </button>
+
+                <div class="toolbar-separator" fxHide.gt-md></div>
+                <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+                    <button mat-menu-item (click)="myAccount()">
+                        <mat-icon>account_circle</mat-icon>
+                        <span>Meu perfil</span>
+                    </button>
+
+                    <button mat-menu-item class="" (click)="logout()">
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>Sair</span>
+                    </button>
+
+                </mat-menu>
+
+                <div class="toolbar-separator" fxHide fxShow.gt-xs></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</mat-toolbar>

@@ -1,0 +1,90 @@
+<div id="register" fxLayout="column">
+    <div id="register-form-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <div id="register-form" [@animate]="{value:'*',params:{duration:'300ms',y:'100px'}}">
+            <div class="logo">
+                <img src="assets/images/logos/Logo2.png">
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <mat-progress-bar class="example-margin" [color]="color" [mode]="mode"
+                    [style.display]="submit ? 'block' : 'none'">
+                </mat-progress-bar>
+            </div>
+            <div class="title">Partiu criar sua conta :D</div>
+            <form name="registerForm" [formGroup]="form" novalidate>
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput formControlName="email">
+                    <mat-icon matSuffix class="secondary-text">mail</mat-icon>
+                    <mat-error *ngIf="form.get('email').hasError('required')">
+                        Opa, é necessário informar o e-mail
+                    </mat-error>
+                    <mat-error *ngIf="form.get('email').hasError('email')">
+                        Opa, e-mail informado deve ser válido
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" formControlName="password" [type]="hide ? 'password' : 'text'">
+                    <mat-error>
+                        Opa, é necessário informar a senha
+                    </mat-error>
+                    <div matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </div>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha (Confirme)</mat-label>
+                    <input matInput type="password" formControlName="passwordConfirm"
+                        [type]="hide ? 'password' : 'text'">
+                    <mat-error *ngIf="form.get('passwordConfirm').hasError('required')">
+                        Opa, é necessário confirmar a senha
+                    </mat-error>
+                    <mat-error *ngIf="!form.get('passwordConfirm').hasError('required') &&
+                                       form.get('passwordConfirm').hasError('passwordsNotMatching')">
+                        Senhas não conferem
+                    </mat-error>
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Você é</mat-label>
+                    <mat-select [(value)]="selected" required>
+                        <mat-option value="0" selected>
+                            Homem
+                        </mat-option>
+                        <mat-option value="1">
+                            Mulher
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="terms" fxLayout="row" fxLayoutAlign="center center">
+                    <mat-checkbox name="terms" [checked]="acceptTerms" aria-label="Eu li e aceito" required
+                        (change)="changeAcceptTerms()">
+                        <span>Eu li e aceito</span>
+                    </mat-checkbox>
+                    <a href="javascript:void()" (click)="openDialog()" class="link-terms-conditions">termos e
+                        condições</a>
+                </div>
+                <button mat-raised-button color="accent" class="submit-button" aria-label="Cadastrar"
+                    [disabled]="form.invalid || !acceptTerms || submit" (click)="post()">
+                    Cadastrar
+                </button>
+                <!-- <div class="terms" fxLayout="row" fxLayoutAlign="center center">
+                    <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" (reset)="handleReset()" (expire)="handleExpire()"
+                        (load)="handleLoad()" (success)="handleSuccess($event)" [useGlobalDomain]="false" [size]="size"
+                        [hl]="lang" [theme]="theme" [type]="type" formControlName="recaptcha">
+                    </ngx-recaptcha2>
+                </div> -->
+            </form>
+            <div class="register" fxLayout="column" fxLayoutAlign="center center">
+                <span class="text">Já tem uma conta?</span>
+                <a class="link" [routerLink]="'/pages/auth/login'">Login</a>
+            </div>
+        </div>
+    </div>
+</div>

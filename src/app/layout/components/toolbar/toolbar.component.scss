@@ -1,0 +1,151 @@
+@import "src/@fuse/scss/fuse";
+
+toolbar {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  z-index: 4;
+
+  .itens-right {
+    display: flex;
+    float: right;
+    position: absolute;
+    align-items: center;
+    right: 0vw;
+  }
+
+  &.below {
+    z-index: 2;
+  }
+
+  .mat-toolbar {
+    position: relative;
+    background: inherit !important;
+    color: inherit !important;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    .logo-icon {
+      width: 38px;
+    }
+  }
+
+  .user-button,
+  fuse-search-bar,
+  .language-button,
+  .chat-panel-toggle-button,
+  .quick-panel-toggle-button {
+    min-width: 64px;
+    height: 64px;
+
+    @include media-breakpoint("xs") {
+      height: 56px;
+    }
+  }
+
+  .navbar-toggle-button {
+    min-width: 56px;
+    height: 56px;
+  }
+
+  .toolbar-separator {
+    height: 64px;
+    width: 1px;
+
+    @include media-breakpoint("xs") {
+      height: 56px;
+    }
+  }
+}
+
+.pictureAlterarConta {
+  max-width: 23px !important;
+  max-height: 23px !important;
+  min-width: 23px !important;
+}
+
+.contasInstagram {
+  flex-direction: row !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-left: 15px;
+}
+
+.contasInstagram img {
+  margin-right: 5px;
+}
+
+.switch-on-off {
+  display: flex;
+  margin-left: 10px;
+  width: 110px;
+}
+
+.switch-on-off-checkbox {
+  visibility: hidden;
+  display: none;
+}
+
+.switch-text {
+  font-size: 13px;
+}
+
+.switch-on-off > div {
+  width: 90px;
+  height: 40px;
+  background: #2d323e;
+  z-index: 0;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: right;
+  padding: 0 10px;
+  color: white;
+  transition: all 250ms;
+}
+
+.switch-on-off > input:checked + div {
+  background: #9100e6;
+  text-align: left;
+  color: white;
+}
+
+.switch-on-off > div:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 34px;
+  width: 34px;
+  background: linear-gradient(#f9f9f9 30%, #cdcdcd);
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.switch-on-off > input:checked + div:after {
+  left: 60px;
+}
+
+.switch-on-off > input:checked + div:before {
+  content: "";
+  position: absolute;
+  left: 53px;
+  border-radius: 50%;
+}
+
+.imc {
+  font-size: 10px !important;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}

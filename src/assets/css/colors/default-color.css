@@ -1,0 +1,190 @@
+@charset 'UTF-8';
+/******************************************;
+* Theme Name: Juno;
+* Theme URI: http://juno.dealsontips.com;
+* Description: This is a coming soon theme;
+* Version: 1.0;
+* Author: Yogesh Raj;
+* Author URI: http://www.dealsontips.com;
+* Generated code for styling Juno;
+**************************************************/
+a {
+    color: #a229d9;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}
+a:hover {
+    color: #8221ae;
+    text-decoration: none;
+}
+a:focus {
+    outline: 0;
+    color: #a229d9;
+    outline-offset: -2px;
+    text-decoration: none;
+}
+.scroll-up a {
+    background-color: #F5F5F5;
+    color: #a229d9;
+}
+.dividing-border::after {
+    background-color: #a229d9;
+}
+.dividing-border::before {
+    border: 1px solid #a229d9;
+    background: #a229d9 repeat scroll 0 0;
+}
+.dividing-border::after {
+    background-color: #a229d9;
+}
+.tooltip-inner{
+     background-color: #a229d9;
+}
+.tooltip.top .tooltip-arrow{
+     border-top-color: #a229d9;
+}
+.btn-success{
+     background: #a229d9;
+     color:#FFFFFF
+}
+.btn-success:hover{
+     background: #8221ae;
+     color:#FFFFFF
+}
+.btn-success:focus:active,.btn-success:focus{
+     background-color: #8221ae;
+}
+.sidebar-nav > .sidebar-brand a{
+    color: #a229d9;
+}
+.nav > li > a{
+     color: #f0f0f0;
+     border-left: 5px inset transparent;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    color: #a229d9;
+    border-left: 5px inset #a229d9;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #a229d9;
+    border-left: 5px inset #a229d9;
+}
+.nav-pills > .sidebar-brand.active > a,.nav-pills > .sidebar-brand.active > a:hover,.nav-pills > .sidebar-brand.active > a:focus {
+    color: #a229d9;
+}
+.btn-menu {
+    color: #FFFFFF;
+    background-color: rgba(162,41,217, 0.8);
+}
+.btn-menu:hover, .btn-menu:focus, .btn-menu:active {
+    background-color: #a229d9;
+    color: #FFFFFF;
+}
+.home .form-control{
+    border-color: #a229d9;
+    color: #f0f0f0;
+}
+.home .input-group-addon{
+    border-color: #a229d9;
+}
+.intro .subscription-form .form-control:focus{
+    border-color: #a229d9;
+}
+.subscription .small-para{
+    color: #a229d9;
+}
+.service-row .service-box .service-icon{
+    color: #a229d9;
+    border: 2px solid #a229d9;
+}
+.service-row .service-box:hover .service-icon {
+    background-color: #a229d9;
+    border-color: #a229d9;
+}
+.service-row > div:hover > .service-box{
+     border-color: #a229d9;
+}
+.testimonial .carousel-indicators li {
+    border-color: #a229d9;
+}
+.testimonial .carousel-indicators .active {
+    border-color: #a229d9;
+    background-color: #a229d9;
+}
+.carousel-content .nav-roundslide a:hover {
+    width: 150px;
+    color: #a229d9;
+    background: rgba(15, 15, 15, 0.5);
+}
+.carousel-content .nav-roundslide h3 {
+     color: #a229d9;
+}
+.portfolio-item .portfolio-overlay{
+    background: rgba(162,41,217, 0.8);
+}
+.portfolio-item .work-link i{
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.team-list .panel-default > .panel-footer{
+    background-color: #a229d9;
+    border-color: #a229d9;
+    color: #FFFFFF;
+}
+.team-list .team-circle{
+    border: 3px solid #a229d9;
+}
+.team-list .panel .panel-footer .btn-success:hover{
+    color: #8221ae;
+    background-color: #FFFFFF;
+}
+.team-list .panel .panel-footer .active{
+    color: #8221ae;
+    background-color: #FFFFFF;
+}
+.project-detail .lead{
+    color: #a229d9;
+    margin-bottom: 15px;
+}
+.project-detail .rotate-square {
+    color: #a229d9;
+    border: 2px solid #a229d9;
+}
+.project-detail .rotate-square:hover {
+    background-color: transparent;
+}
+.project-detail .project-icon{
+     color: #a229d9;
+}
+.contact .contact-social-link a .social-icon{
+    color: #FFFFFF;
+    background-color: #a229d9;
+}
+.contact .contact-social-link a .social-icon:hover{
+    color: #FFFFFF;
+    background-color: #8221ae;
+}
+.contact-form .form-control{
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+.contact-form .form-control:focus{
+    border: 1px solid #a229d9;
+}
+.footer-holder h5 {
+    color: #f0f0f0;
+    margin: 0 0 14px;
+}
+.footer-holder .phone a, .footer-holder .email a{
+    color: #a229d9;
+}
+.footer-holder ul a {
+    color: #a229d9;
+}
+.footer-holder .phone a:hover, .footer-holder .email a:hover, .footer-holder ul a:hover {
+    color: #FFFFFF;
+}
+.footer-holder .email {
+    color: #a229d9;
+}
