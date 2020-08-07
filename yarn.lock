@@ -5851,6 +5851,11 @@ ngx-cookie-service@2.1.0:
   resolved "https://registry.yarnpkg.com/ngx-cookie-service/-/ngx-cookie-service-2.1.0.tgz#8023f9edfcd8bd4f0b299b1f0c263112dbb0e261"
   integrity sha512-7g7NEo7dYp6ap0j5qZ4Nf6nrU4WVdx8ycRQbWyLPps6mrR/+5vKU73ie0CMuKzl625bDTBjjJ60AmqTsp4l+AQ==
 
+ngx-currency@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-currency/-/ngx-currency-2.0.0.tgz#8b6de97f65caa934562e272487049d0864ee1d65"
+  integrity sha512-B5oZLrkSgnGGQ271TT4MoNvsDb3ATMDKPKHuDKNKvfqA9QQXVXl7HCWjQ/0WOep/alh6mpJYJI8xQkCk6TCP5g==
+
 ngx-mask@7.9.10:
   version "7.9.10"
   resolved "https://registry.yarnpkg.com/ngx-mask/-/ngx-mask-7.9.10.tgz#8d352e00460a79058e2710f44e9d69204a73e38b"
@@ -6709,10 +6714,10 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prismjs@1.15.0:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.15.0.tgz#8801d332e472091ba8def94976c8877ad60398d9"
-  integrity sha512-Lf2JrFYx8FanHrjoV5oL8YHCclLQgbJcVZR+gikGGMqz6ub5QVWDTM6YIwm3BuPxM/LOV+rKns3LssXNLIf+DA==
+prismjs@1.21.0:
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
+  integrity sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
   optionalDependencies:
     clipboard "^2.0.0"
 
